@@ -38,17 +38,54 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"linecount" : 2,
-					"maxclass" : "o.display",
+					"id" : "obj-19",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.0, 268.0, 150.0, 48.0 ],
-					"text" : "/tt/movement : 3,\n/tt/next : 1",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 95.0, 395.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 110.0, 365.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 125.0, 335.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 127.0, 336.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 140.0, 305.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -376,8 +413,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "signal" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "FullPacket", "signal", "int" ],
 					"patching_rect" : [ 44.0, 394.0, 49.0, 20.0 ],
 					"style" : "",
 					"text" : "tt.synth"
@@ -389,8 +426,8 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "signal" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "FullPacket", "signal", "int" ],
 					"patching_rect" : [ 59.0, 364.0, 49.0, 20.0 ],
 					"style" : "",
 					"text" : "tt.synth"
@@ -415,11 +452,13 @@
 					"fontface" : 0,
 					"fontsize" : 24.0,
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 379.0, 448.0, 48.0 ],
+					"patching_rect" : [ 198.0, 379.0, 448.0, 75.0 ],
+					"text" : "/stop/filename : \"05_3eme-mvmt\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -1978,7 +2017,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -2002,7 +2040,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 494.0, 231.0, 559.0, 156.0 ],
-									"text" : "/tt/synth/play/offset : 0,\n/tt/movement : 1,\n/tt/next : 1,\n/tt/current : 0,\n/tt/barnum : 1,\n/tt/op/advance : \"lambda([], /tt/current = /tt/next, /tt/next++)\",\n/tt/op/incnext : \"lambda([], /tt/next++)\",\n/tt/op/decnext : \"lambda([], /tt/next--)\",\n/tt/op/nothing : \"lambda([], 0)\",\n/tt/op/func : \"/tt/op/nothing\"",
+									"text" : "/tt/movement : 3,\n/tt/op/func : \"/tt/op/nothing\",\n/tt/synth/play/offset : 0,\n/tt/next : 1,\n/tt/current : 0,\n/tt/barnum : 0,\n/tt/op/advance : \"lambda([], /tt/current = /tt/next, /tt/next++)\",\n/tt/op/incnext : \"lambda([], /tt/next++)\",\n/tt/op/decnext : \"lambda([], /tt/next--)\",\n/tt/op/nothing : \"lambda([], 0)\"",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -3950,8 +3988,8 @@
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "signal" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "FullPacket", "signal", "int" ],
 					"patching_rect" : [ 74.0, 335.0, 49.0, 20.0 ],
 					"style" : "",
 					"text" : "tt.synth"
@@ -3963,8 +4001,8 @@
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "signal" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "FullPacket", "signal", "int" ],
 					"patching_rect" : [ 89.0, 305.0, 49.0, 20.0 ],
 					"style" : "",
 					"text" : "tt.synth"
@@ -4069,6 +4107,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 2 ]
 				}
 
 			}
@@ -4218,6 +4265,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-42", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4231,6 +4287,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-43", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-43", 2 ]
 				}
 
 			}
@@ -4282,15 +4347,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-53", 0 ]
@@ -4384,6 +4440,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 2 ]
 				}
 
 			}
