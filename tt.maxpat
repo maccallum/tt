@@ -2126,7 +2126,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -2398,7 +2397,21 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 789.0, 204.0, 163.0, 20.0 ],
+													"style" : "",
+													"text" : "tt.stop 10_4eme-mvmt 1000."
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 													"id" : "obj-43",
@@ -2613,6 +2626,15 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-45", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-74", 12 ]
 												}
 
 											}
