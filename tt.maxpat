@@ -2400,6 +2400,20 @@
 										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
+													"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+													"id" : "obj-3",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 829.761902, 234.0, 129.0, 20.0 ],
+													"presentation_rect" : [ 760.761902, 233.0, 0.0, 0.0 ],
+													"style" : "",
+													"text" : "tt.play 10_4eme-mvmt"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 													"id" : "obj-2",
 													"maxclass" : "newobj",
@@ -2483,9 +2497,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 605.761902, 234.0, 129.0, 20.0 ],
+													"patching_rect" : [ 605.761902, 234.0, 196.0, 20.0 ],
 													"style" : "",
-													"text" : "tt.play 10_4eme-mvmt"
+													"text" : "tt.play 10_4eme-mvmt_2ndVersion"
 												}
 
 											}
