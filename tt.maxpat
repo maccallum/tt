@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1038.0, 79.0, 730.0, 734.0 ],
+		"rect" : [ 112.0, 79.0, 730.0, 734.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -223,13 +223,12 @@
 					"fontface" : 0,
 					"fontsize" : 24.0,
 					"id" : "obj-3",
-					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 379.0, 448.0, 75.0 ],
-					"text" : "/play/filename : \"10_4eme-mvmt_2ndVersion\"",
+					"patching_rect" : [ 198.0, 379.0, 448.0, 48.0 ],
+					"text" : "/stop/filename : \"02_1er-mvmt\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -311,9 +310,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 160.949219, 97.0, 20.0 ],
+									"patching_rect" : [ 50.0, 160.949219, 90.0, 20.0 ],
 									"style" : "",
-									"text" : "tt.debounce 250"
+									"text" : "tt.debounce 50"
 								}
 
 							}
@@ -1399,13 +1398,13 @@
 									"fontface" : 0,
 									"fontsize" : 12.0,
 									"id" : "obj-49",
-									"linecount" : 9,
+									"linecount" : 10,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 494.0, 231.0, 559.0, 143.0 ],
-									"text" : "/tt/movement : 1,\n/tt/next : 1,\n/tt/current : 0,\n/tt/barnum : 1,\n/tt/op/advance : \"lambda([], /tt/current = /tt/next, /tt/next++)\",\n/tt/op/incnext : \"lambda([], /tt/next++)\",\n/tt/op/decnext : \"lambda([], /tt/next--)\",\n/tt/op/nothing : \"lambda([], 0)\",\n/tt/op/func : \"/tt/op/nothing\"",
+									"patching_rect" : [ 494.0, 231.0, 559.0, 156.0 ],
+									"text" : "/tt/movement : 1,\n/tt/next : 1,\n/tt/current : 0,\n/tt/barnum : 1,\n/tt/synth/play/offset : 0,\n/tt/op/advance : \"lambda([], /tt/current = /tt/next, /tt/next++)\",\n/tt/op/incnext : \"lambda([], /tt/next++)\",\n/tt/op/decnext : \"lambda([], /tt/next--)\",\n/tt/op/nothing : \"lambda([], 0)\",\n/tt/op/func : \"/tt/op/nothing\"",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
