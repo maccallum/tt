@@ -81,9 +81,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 264.0, 75.0, 168.0, 20.0 ],
+					"patching_rect" : [ 264.0, 75.0, 201.0, 20.0 ],
 					"style" : "",
-					"text" : "o.pack /tt/movement /tt/next 1"
+					"text" : "o.pack /tt/movement /tt/pedal/next 1"
 				}
 
 			}
