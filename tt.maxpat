@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 613.0, 102.050781, 74.0, 20.0 ],
-					"presentation_rect" : [ 612.0, 105.050781, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "prepend set"
 				}
@@ -57,7 +56,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 613.0, 190.050781, 92.0, 18.0 ],
-					"presentation_rect" : [ 612.0, 193.050781, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "current barnum"
 				}
@@ -74,7 +72,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 613.0, 136.050781, 82.0, 44.0 ],
-					"presentation_rect" : [ 612.0, 139.050781, 0.0, 0.0 ],
 					"style" : "",
 					"textcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ]
 				}
@@ -4890,6 +4887,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 387.0, 531.0, 48.0 ],
+					"text" : "/play/filename : \"12_4eme-mvmt\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -5435,7 +5433,7 @@
 									"destination" : [ "obj-77", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 159.0, 911.949219, 354.0, 889.949219, 360.0, 740.949219, 145.5, 714.949219 ],
+									"midpoints" : [ 159.0, 911.949219, 354.0, 889.949219, 354.0, 740.949219, 145.5, 714.949219 ],
 									"source" : [ "obj-85", 2 ]
 								}
 
@@ -6034,6 +6032,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -6057,7 +6056,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 494.0, 231.0, 559.0, 564.0 ],
-									"text" : "/tt/movement : 1,\n/tt/pedal/next : 1,\n/tt/pedal/current : 0,\n/tt/barnum/next : 1,\n/tt/barnum/current : 0,\n/tt/synth/play/offset : 0,\n/tt/op/advance : \"lambda([], /tt/pedal/current = /tt/pedal/next, /tt/pedal/next++, apply(/tt/op/barforpedal, []))\",\n/tt/op/incnext : \"lambda([], /tt/pedal/next++, /tt/barnum/next = apply(/tt/op/barforpedal, []))\",\n/tt/op/decnext : \"lambda([], /tt/pedal/next--, /tt/barnum/next = apply(/tt/op/barforpedal, []))\",\n/tt/op/barforpedal : \"lambda([], /tt/barnum/next = value(\\\"/tt/pedal2bar/\\\" + /tt/movement)[[/tt/pedal/next]], /tt/barnum/current = value(\\\"/tt/pedal2bar/\\\" + /tt/movement)[[/tt/pedal/current]])\",\n/tt/op/pedalforbar : \"lambda([], /tt/pedal/next = value(\\\"/tt/bar2pedal/\\\" + /tt/movement)[[/tt/barnum/next]], /tt/pedal/current = value(\\\"/tt/bar2pedal/\\\" + /tt/movement)[[/tt/barnum/current]])\",\n/tt/op/nothing : \"lambda([], 0)\",\n/tt/op/func : \"/tt/op/nothing\",\n/tt/bar2pedal/1 : [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 1],\n/tt/bar2pedal/3 : [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 1, 1, 1],\n/tt/bar2pedal/4 : [0, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13],\n/tt/pedal2bar/1 : [1, 1, 36, 37, 55, 61, 1],\n/tt/pedal2bar/3 : [1, 1, 30, 38, 56, 66, 73, 84, 85, 95, 96, 100, 118, 1],\n/tt/pedal2bar/4 : [1, 1, 6, 10, 25, 39, 73, 75, 86, 108, 111, 130, 135, 148, 1]",
+									"text" : "/tt/op/func : \"/tt/op/advance\",\n/tt/pedal/next : 14,\n/tt/movement : 4,\n/tt/pedal/current : 13,\n/tt/barnum/next : 1,\n/tt/barnum/current : 148,\n/tt/synth/play/offset : 0,\n/tt/op/advance : \"lambda([], /tt/pedal/current = /tt/pedal/next, /tt/pedal/next++, apply(/tt/op/barforpedal, []))\",\n/tt/op/incnext : \"lambda([], /tt/pedal/next++, /tt/barnum/next = apply(/tt/op/barforpedal, []))\",\n/tt/op/decnext : \"lambda([], /tt/pedal/next--, /tt/barnum/next = apply(/tt/op/barforpedal, []))\",\n/tt/op/barforpedal : \"lambda([], /tt/barnum/next = value(\\\"/tt/pedal2bar/\\\" + /tt/movement)[[/tt/pedal/next]], /tt/barnum/current = value(\\\"/tt/pedal2bar/\\\" + /tt/movement)[[/tt/pedal/current]])\",\n/tt/op/pedalforbar : \"lambda([], /tt/pedal/next = value(\\\"/tt/bar2pedal/\\\" + /tt/movement)[[/tt/barnum/next]], /tt/pedal/current = value(\\\"/tt/bar2pedal/\\\" + /tt/movement)[[/tt/barnum/current]])\",\n/tt/op/nothing : \"lambda([], 0)\",\n/tt/bar2pedal/1 : [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 1],\n/tt/bar2pedal/3 : [1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 1, 1, 1],\n/tt/bar2pedal/4 : [0, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13],\n/tt/pedal2bar/1 : [1, 1, 36, 37, 55, 61, 1],\n/tt/pedal2bar/3 : [1, 1, 30, 38, 56, 66, 73, 84, 85, 95, 96, 100, 118, 1],\n/tt/pedal2bar/4 : [1, 1, 6, 10, 25, 39, 73, 75, 86, 108, 111, 130, 135, 148, 1]",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -6377,6 +6376,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"color" : [ 0.0, 1.0, 0.0, 1.0 ],
@@ -6812,7 +6812,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 84.0, 129.0, 1202.0, 739.0 ],
+										"rect" : [ 127.0, 350.0, 1202.0, 739.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6840,6 +6840,33 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+													"id" : "obj-5",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 886.285645, 204.0, 129.0, 20.0 ],
+													"presentation_rect" : [ 1028.285645, 206.0, 0.0, 0.0 ],
+													"style" : "",
+													"text" : "tt.play 07_3eme-mvmt"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"color" : [ 0.0, 1.0, 0.0, 1.0 ],
+													"id" : "obj-6",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 417.190491, 444.0, 217.0, 20.0 ],
+													"style" : "",
+													"text" : "tt.play 03_3eme-mvmt_final02_version"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-4",
 													"maxclass" : "newobj",
@@ -6938,7 +6965,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 201.571426, 474.0, 183.0, 20.0 ],
 													"style" : "",
-													"text" : "tt.stop 02_3eme-mvmt log 3000."
+													"text" : "tt.stop 02_3eme-mvmt log 4000."
 												}
 
 											}
@@ -6949,9 +6976,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 656.285706, 204.0, 129.0, 20.0 ],
+													"patching_rect" : [ 656.285706, 204.0, 217.0, 20.0 ],
 													"style" : "",
-													"text" : "tt.play 07_3eme-mvmt"
+													"text" : "tt.play 07_3eme-mvmt_final02_version"
 												}
 
 											}
