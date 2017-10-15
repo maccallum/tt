@@ -7542,11 +7542,11 @@
 				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 8,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 664.0, 57.0, 20.0 ],
+					"patching_rect" : [ 20.0, 664.0, 117.0, 20.0 ],
 					"style" : "",
-					"text" : "dac~ 1 2"
+					"text" : "dac~ 1 2 3 4 5 6 7 8"
 				}
 
 			}
@@ -7742,6 +7742,60 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 7 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 6 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 5 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 4 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 2 ]
 				}
 
 			}
